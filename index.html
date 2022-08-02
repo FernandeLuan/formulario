@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+
+<body>
+    <form action="">
+        <p>
+        <label for="texto">Conte sobre você</label>
+        <textarea 
+            required="true"
+            id="texto" 
+            placeholder="Digite aqui..." 
+            cols="20" 
+            rows="1" 
+            name="mensagem">
+        </textarea>
+        </p>
+
+    </form>
+    <form>
+        <label for="nome">Primeiro nome</label>
+        <input type="name" id="nome" name=nome placeholder="Digite seu nome" required="true">
+
+        <label for="Sobrenome">Senha</label>
+        <input type="password" id="password" maxlength="8" name=senha placeholder="Digite sua senha" required="true">
+
+        <p>Olá, qual melhor método de contato?</p>
+
+        <label for="email">E-mail</label>
+        <input id="email" type="radio" required name="metodoDeContato" value="email">
+
+        <label for="whats">WhatsApp</label>
+        <input id="whats" type="radio" required name="metodoDeContato" value="whats">
+
+        <label for="sms">SMS</label>
+        <input id="sms" type="radio" required name="metodoDeContato" value="sms">
+        <p>
+            <label for="conteudo">Newsletter</label>
+            <select id="conteudo" name="conteudo" required="true">
+                <option value="Pediatria">Pediatria</option>
+                <option value="programação">Programação</option>
+                <option value="Medicina">Medicina</option>
+                <option value="Odontologia">Odontologia</option>
+                <option value="direito">Direito</option>
+            </select>
+        </p>
+        <button type=”submit”>Enviar</button>
+    </form>
+</body>
+</html>
